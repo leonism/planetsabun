@@ -1,0 +1,75 @@
+# change the followings to match your Github username and repo name
+# baseurl: "/tailpages" # the name of your github repo
+baseurl: "" # the name of your github repo
+url: "https://www.planetsabun.com" # the url of your github pages
+permalink: /:title/
+
+# site information used in page title, meta data etc.
+title: "Planet Sabun"
+description: Solusi Murah untuk Kebutuhan Sabun Cair Anda
+
+# color theme for links
+theme-color: yellow # indigo|yellow|pink|green|stone|
+
+# homepage information
+author: Planet Sabun
+author-bio: Creator of Planet Sabun  # change to false to hide
+author-image: 279.png  # file must be in the /assets/img/ folder
+
+# navigation menu
+show-nav-menu: true
+
+nav-menu:
+- text: About
+  permalink: about
+- text: Bitcoin
+  permalink: bitcoin
+- text: Blog
+  permalink: blog
+
+# use false to turn off any social media links
+twitter: https://twitter.com/
+facebook: https://facebook.com/
+instagram: https://instagram.com/
+github: https://github.com/
+linkedin: https://linkedin.com/
+medium: false
+google-scholar: false
+email: false
+
+# footer information
+footer-msg: "Powered by Tailpages"
+footer-msg-link: https://github.com/harrywang/tailpages
+
+# google analytics
+# google-analytics: G-WCRC1TC2V5
+
+include: ['_pages']
+
+exclude:
+ - package.json
+ - package-lock.json
+ - postcss-config.js
+ - node_modules
+ - .sass-cache/
+ - .jekyll-cache/
+ - .gitignore
+
+# html compression
+compress_html:
+ clippings: all
+ comments: ['<!-- ', ' -->']
+ endings: all
+ ignore:
+  envs: [local]
+ blanklines: false
+ profile: false
+ startings: [html, head, body]
+
+# css compression
+sass:
+ style: compressed
+
+# jekyll plugins - no need to change
+plugins:
+    - jekyll-seo-tag

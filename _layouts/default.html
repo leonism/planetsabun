@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google analytics -->
+    {% include head.html %}
+
+    <!-- Jekyll SEO plugin -->
+    {% seo %}
+    
+    <!-- TailwindCSS and Inter Font-->    
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css" />    
+    <title>{{ site.title }}</title>    
+</head>
+<body class="antialiased bg-white dark:bg-main scroll-smooth font-navigation">    
+        {% include navigation.html %}        
+        {{ content }}
+        {% include heroWelcome.html %}
+        {% include heroSection.html %}
+        {% include heroContent.html %}
+        {% include footer.html %}
+        <script src="{{site.baseurl}}/assets/js/app.js"></script>
+        <script src="{{site.baseurl}}/assets/js/script.js"></script>
+</body>
+</html>
